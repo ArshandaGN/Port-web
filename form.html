@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Arshan.</a>
+
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="form.html">Form Profile</a>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <section id="form" class="form">
+        <h2>Form Profile</h2>
+        <p>Please fill in your profile details below:</p>
+
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Contact Info -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach out to me via email or social media below.</p>
+        <div class="contact-info">
+            <a href="#"><i class='bx bx-envelope'></i> Email</a>
+            <a href="#"><i class='bx bxl-instagram'></i> Instagram</a>
+            <a href="#"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Arshan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
