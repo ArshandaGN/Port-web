@@ -1,95 +1,126 @@
-<!DOCTYPE html> 
-<html> 
-    <head>    
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="decription" content="Portofolio arshandagn">
-        <title> Portofolio arshandagn</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head> 
-    <body>
-        <div class="container">
-            <header class="header">
-                <a href="#" class="logo">Arshan.</a>
-            </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="Portofolio arshandagn">
+    <title> Portofolio arshandagn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head> 
+<body class="font-sans bg-gray-100">
     
-            <nav class="sidebar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
     
-            <main class="content">
-                <!-- Home Section -->
-                <section id="home" class="home">
-                    <div class="home-content">
-                        <h1>HI, I'm Arshan</h1>
-                        <h3>Web Developer</h3>
-                        <p>Welcome to my portfolio! I love building websites and learning new things in technology. Here, you can see my work and the projects I've created. Let's connect and work together!</p>
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-[#081b29] text-[#f3f3f3] p-5 text-center text-2xl font-bold sticky top-0 z-50">
+            <a href="#" class="text-lg text-[#ededed] font-semibold">Arshan.</a>
+        </header>
+
+        <nav class="w-52 bg-[#081b29] pt-5 fixed top-20 h-[calc(100vh-80px)] flex flex-col items-center">
+            <ul class="list-none">
+                <li class="my-4"><a href="#home" class="text-[#f3f3f3] text-lg p-4 hover:bg-[#00abf0] transition rounded">Home</a></li>
+                <li class="my-4"><a href="#about" class="text-[#f3f3f3] text-lg p-4 hover:bg-[#00abf0] transition rounded">About Me</a></li>
+                <li class="my-4"><a href="#skills" class="text-[#f3f3f3] text-lg p-4 hover:bg-[#00abf0] transition rounded">Skills</a></li>
+                <li class="my-4"><a href="#experience" class="text-[#f3f3f3] text-lg p-4 hover:bg-[#00abf0] transition rounded">Experience</a></li>
+                <li class="my-4"><a href="#contact" class="text-[#f3f3f3] text-lg p-4 hover:bg-[#00abf0] transition rounded">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="flex-1 ml-56 p-5 bg-gray-100 text-[#081b29]">
+            <section id="home" class="h-screen bg-cover bg-center flex items-center p-10" style="background-image: url('home.png');">
+                <div class="max-w-2xl">
+                    <h1 class="text-[#ededed] text-6xl font-bold">HI, I'm Arshan</h1>
+                    <h3 class="text-2xl font-bold text-[#00abf0]">Web Developer</h3>
+                    <p class="text-lg text-[#ededed] my-5">Welcome to my portfolio! I love building websites and learning new things in technology. Here, you can see my work and the projects I've created. Let's connect and work together!</p>
+                </div>
+
+                <div class="absolute bottom-10 w-40 flex justify-between">
+                    <a href="mailto:arshandagn06@gmail.com" class="bg-transparent border-2 border-[#00abf0] rounded-full p-2 text-[#00abf0] hover:text-[#081b29]">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="https://www.instagram.com/arshndasvnch" class="bg-transparent border-2 border-[#00abf0] rounded-full p-2 text-[#00abf0] hover:text-[#081b29]">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arshandagn" class="bg-transparent border-2 border-[#00abf0] rounded-full p-2 text-[#00abf0] hover:text-[#081b29]">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div>
+            </section>
+
+            <section id="about" class="py-60 px-10">
+                <h2 class="text-4xl font-bold text-center mb-10">About Me</h2>
+                <p class="text-lg max-w-2xl mx-auto text-gray-700">I am a Computer Science student at Universitas Pertamina with a big interest in technology and web development. I am always learning and improving my web development and programming skills, and I have experience with HTML and CSS. I also take part in student committees, where I have learned to work well in teams and build leadership skills. I know programming languages like C++, CSS, Java, and Python. I enjoy trying new things and taking on challenges to learn more. This portfolio shows my journey in the digital world and my passion for innovation. My favorite song is "Consume" by Chase Atlantic.</p>
+            </section>
+
+
+            <section id="skills" class="py-20 bg-[#081b29] text-center text-white">
+                <h2 class="text-4xl font-bold mb-12">Skills</h2>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="java.png" alt="Java" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">Java</p>
                     </div>
-            
-                    <div class="home-sci">
-                        <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i></a>
-                        <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i></a>
-                    
-                    <span class="home-imgHover"></span>
-                </section>
-    
-                <!-- About Me Section -->
-                <section id="about" class="about">
-                    <h2>About Me</h2>
-                    <p> I am a Computer Science student at Universitas Pertamina with a big interest in technology and web development. I am always learning and improving my web development and programming skills, and I have experience with HTML and CSS. I also take part in student committees, where I have learned to work well in teams and build leadership skills. I know programming languages like C++, CSS, Java, and Python. I enjoy trying new things and taking on challenges to learn more. This portfolio shows my journey in the digital world and my passion for innovation. my favorite songs is consume by chase atlantic</p>
-                </section>
-    
-                <!-- Skills Section -->
-                <section id="skills" class="skills">
-                    <h2>Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-item"><img src="java.png" alt="java"><p>Java</p></div>
-                        <div class="skill-item"><img src="html.png" alt="html"><p>HTML</p></div>
-                        <div class="skill-item"><img src="css-3.png" alt="css"><p>CSS</p></div>
-                        <div class="skill-item"><img src="c-.png" alt="c++"><p>C++</p></div>
-                        <div class="skill-item"><img src="python.png" alt="python"><p>python</p></div>
-                        <div class="skill-item"><img src="canva.png" alt="canva"><p>Canva</p></div>
-                        <div class="skill-item"><img src="capcut.png" alt="capcut"><p>Capcut</p></div>
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="html.png" alt="HTML" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">HTML</p>
                     </div>
-                </section>
-    
-                <!-- Experience Section -->
-                <section id="experience" class="experience">
-                    <h2>My Experience</h2>
-                    <div class="experience-gallery">
-                        <div class="experience-item">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tfikt73qMdQ?si=6OoJYhRRtqETLVEk" frameborder="0" allowfullscreen></iframe>
-                            <h3>Video Editing</h3>
-                            <p>I edited this video for a class assignment using CapCut. You can watch the result in the video above.</p>
-                        </div>
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="css-3.png" alt="CSS" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">CSS</p>
                     </div>
-                </section>
-    
-                <!-- Contact Section -->
-                <section id="contact" class="contact">
-                    <h2>Contact Me</h2>
-                    <p>You can reach out to me via email or social media below.</p>
-                    <div class="contact-info">
-                        <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i> Email</a>
-                        <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i> Instagram</a>
-                        <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="c-.png" alt="C++" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">C++</p>
                     </div>
-                </section>
-            </main>
-    
-            <!-- Footer -->
-            <footer class="footer">
-                <p>&copy; 2024 Arshan. All Rights Reserved.</p>
-            </footer>
-        </div>
-    </body> 
-    </html>
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="python.png" alt="Python" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">Python</p>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="canva.png" alt="Canva" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">Canva</p>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-lg w-32 transition transform hover:scale-105">
+                        <img src="capcut.png" alt="Capcut" class="w-12 h-12 mb-2 mx-auto">
+                        <p class="text-gray-800">Capcut</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="py-40">
+                <h2 class="text-4xl font-bold text-center mb-10">My Experience</h2>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <div class="bg-white border-4 border-[#00abf0] rounded-lg w-90 p-4 transition transform hover:scale-105">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/tfikt73qMdQ?si=6OoJYhRRtqETLVEk" frameborder="0" allowfullscreen></iframe>
+                        <h3 class="text-[#00abf0] text-lg font-bold mb-2">Video Editing</h3>
+                        <p class="text-gray-700">I edited this video for a class assignment using CapCut. You can watch the result in the video above.</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="contact" class="py-40 bg-[#081b29] text-center text-white">
+                <h2 class="text-4xl font-bold mb-10">Contact Me</h2>
+                <p class="text-lg mb-10">You can reach out to me via email or social media below.</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="mailto:arshandagn06@gmail.com" class="bg-transparent border-2 border-[#00abf0] rounded-full p-2 text-[#00abf0] hover:text-[#081b29]">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="https://www.instagram.com/arshndasvnch" class="bg-transparent border-2 border-[#00abf0] rounded-full p-2 text-[#00abf0] hover:text-[#081b29]">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arshandagn" class="bg-transparent border-2 border-[#00abf0] rounded-full p-2 text-[#00abf0] hover:text-[#081b29]">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="bg-[#081b29] text-[#f3f3f3] p-5 text-center sticky bottom-0 w-full">
+            <p>&copy; 2024 Arshan. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body> 
+</html>
