@@ -10,81 +10,86 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head> 
     <body>
-        <header class="header">
-            <a href="#" class="logo">Arshan.</a>
+        <div class="container">
+            <header class="header">
+                <a href="#" class="logo">Arshan.</a>
+            </header>
     
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#Contact">Contact</a>
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
-        </header>
     
-        <section id="home" class="home">
-            <div class="home-content">
-                <h1>HI, I'm Arshan</h1>
-                <h3>Web Developer</h3>
-                <p>Welcome to my portfolio! I love building websites and learning new things in technology. Here, you can see my work and the projects I've created. Let's connect and work together!</p>
-            </div>
-    
-            <div class="home-sci">
-                <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i></a>
-                <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i></a>
+            <main class="content">
+                <!-- Home Section -->
+                <section id="home" class="home">
+                    <div class="home-content">
+                        <h1>HI, I'm Arshan</h1>
+                        <h3>Web Developer</h3>
+                        <p>Welcome to my portfolio! I love building websites and learning new things in technology. Here, you can see my work and the projects I've created. Let's connect and work together!</p>
+                    </div>
             
-            <span class="home-imgHover"></span>
-        </section>
-
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p> I am a Computer Science student at Universitas Pertamina with a big interest in technology and web development. I am always learning and improving my web development and programming skills, and I have experience with HTML and CSS. I also take part in student committees, where I have learned to work well in teams and build leadership skills. I know programming languages like C++, CSS, Java, and Python. I enjoy trying new things and taking on challenges to learn more. This portfolio shows my journey in the digital world and my passion for innovation. my favorite songs is consume by chase atlantic</p>
-            <div class="audio-home">
-                <audio controls/autoplay/loop> 
-                    <source src="consume.mp3" type="audio/mpeg"> 
-                    Browser Anda tidak mendukung audio. 
-                    </audio> 
-            </div>
-        </section>
+                    <div class="home-sci">
+                        <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i></a>
+                        <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i></a>
+                    
+                    <span class="home-imgHover"></span>
+                </section>
     
+                <!-- About Me Section -->
+                <section id="about" class="about">
+                    <h2>About Me</h2>
+                    <p> I am a Computer Science student at Universitas Pertamina with a big interest in technology and web development. I am always learning and improving my web development and programming skills, and I have experience with HTML and CSS. I also take part in student committees, where I have learned to work well in teams and build leadership skills. I know programming languages like C++, CSS, Java, and Python. I enjoy trying new things and taking on challenges to learn more. This portfolio shows my journey in the digital world and my passion for innovation. my favorite songs is consume by chase atlantic</p>
+                </section>
     
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <div class="skills-box">
-                <img src="java.png" alt="java">
-                <img src="html.png" alt="html">
-                <img src="css-3.png" alt="css">
-                <img src="canva.png" alt="canva">
-                <img src="c-.png" alt="c++">
-                <img src="capcut.png" alt="capcut">
-            </div>
-        </section>
+                <!-- Skills Section -->
+                <section id="skills" class="skills">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="java.png" alt="java"><p>Java</p></div>
+                        <div class="skill-item"><img src="html.png" alt="html"><p>HTML</p></div>
+                        <div class="skill-item"><img src="css-3.png" alt="css"><p>CSS</p></div>
+                        <div class="skill-item"><img src="c-.png" alt="c++"><p>C++</p></div>
+                        <div class="skill-item"><img src="python.png" alt="python"><p>python</p></div>
+                        <div class="skill-item"><img src="canva.png" alt="canva"><p>Canva</p></div>
+                        <div class="skill-item"><img src="capcut.png" alt="capcut"><p>Capcut</p></div>
+                    </div>
+                </section>
     
-      
-        <section id="experience" class="experience">
-            <h2>My Experience</h2>
-            <div class="experience-gallery">
-                <div class="experience-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tfikt73qMdQ?si=6OoJYhRRtqETLVEk" frameborder="0" allowfullscreen></iframe>
-                    <h3>Video Editing</h3>
-                    <p>I edited this video for a class assignment using CapCut. You can watch the result in the video above.</p>
-                </div>
-            </div>
-        </section>
+                <!-- Experience Section -->
+                <section id="experience" class="experience">
+                    <h2>My Experience</h2>
+                    <div class="experience-gallery">
+                        <div class="experience-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tfikt73qMdQ?si=6OoJYhRRtqETLVEk" frameborder="0" allowfullscreen></iframe>
+                            <h3>Video Editing</h3>
+                            <p>I edited this video for a class assignment using CapCut. You can watch the result in the video above.</p>
+                        </div>
+                    </div>
+                </section>
     
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach out to me via email or social media below.</p>
-            <div class="contact-info">
-                <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i Email</a>
-                <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i> Instagram</a>
-                <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i> LinkedIn</a>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>&copy; 2024 Arshan. All Rights Reserved.</p>
-        </footer>
+                <!-- Contact Section -->
+                <section id="contact" class="contact">
+                    <h2>Contact Me</h2>
+                    <p>You can reach out to me via email or social media below.</p>
+                    <div class="contact-info">
+                        <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i> Email</a>
+                        <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i> Instagram</a>
+                        <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    </div>
+                </section>
+            </main>
+    
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2024 Arshan. All Rights Reserved.</p>
+            </footer>
+        </div>
     </body> 
-</html>
+    </html>

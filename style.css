@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #ededed;
-    
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 .header {
+    background-color: #081b29;
+    color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
     position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background:#081b29;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .logo {
@@ -33,30 +34,58 @@ body {
     font-weight: 600;
 }
 
-.logo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
+.sidebar {
+    width: 200px;
+    background-color: #081b29;
+    padding-top: 20px;
+    position: fixed;
+    top: 80px; 
+    height: calc(100vh - 80px);
 }
 
-.navbar a {
-    font-size: 18px;
-    color: #ededed;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+    color: #f3f3f3;
+    font-size: 1.1em;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
 }
 
-.navbar a:hover, 
-.navbar a.active {
-    color: #00abf0;
+.sidebar ul li a:hover {
+    background-color: #00abf0;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    color: #081b29;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+section p {
+    line-height: 1.6;
 }
 
 .home {
@@ -74,6 +103,7 @@ body {
 }
 
 .home-content h1 {
+    color: #ededed;
     position: relative;
     font-size: 56px;
     font-weight: 700;
@@ -115,6 +145,7 @@ body {
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
+    color: #ededed;
 }
 
 .home-content p::before {
@@ -307,18 +338,14 @@ body {
     }
 }
 
-/* About Section */
-.about {
-    padding: 250px 10%;
-    background-color: #f3f3f3;
-    text-align: center;
-    color: #081b29;
+.about{
+    padding: 150px 10%;
 }
-
 .about h2 {
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about p {
@@ -338,17 +365,40 @@ body {
 .skills h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-.skills img {
-    width: 64px; 
-    height: 64px; 
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
+.skill-item {
+    background: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s;
+}
 
+.skill-item:hover {
+    transform: scale(1.05);
+}
 
-/* Experience Section */
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
 .experience {
     padding: 10rem;
     text-align: center;
@@ -357,6 +407,13 @@ body {
 
 .experience h2 {
     color: #081b29;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    color: #00abf0;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -402,14 +459,6 @@ body {
     color: #333;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .experience-item {
-        width: 100%;
-    }
-}
-
-/* Contact Section */
 .contact {
     padding: 100px 10%;
     background-color: #081b29;
@@ -445,15 +494,12 @@ body {
     color: #ededed;
 }
 
-
-/* Footer */
 .footer {
-    padding: 20px;
     background-color: #081b29;
+    color: #f3f3f3;
     text-align: center;
-    color: #ededed;
-}
-
-.footer p {
-    font-size: 16px;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }
