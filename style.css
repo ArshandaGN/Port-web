@@ -309,7 +309,7 @@ body {
 
 /* About Section */
 .about {
-    padding: 100px 10%;
+    padding: 250px 10%;
     background-color: #f3f3f3;
     text-align: center;
     color: #081b29;
@@ -328,11 +328,38 @@ body {
     color: #555;
 }
 
+.skills {
+    padding: 250px 10%;
+    background-color: #081b29;
+    text-align: center;
+    color: #fff;
+}
+
+.skills h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.skills img {
+    width: 64px; 
+    height: 64px; 
+}
+
+
+
 /* Experience Section */
 .experience {
-    padding: 2rem;
+    padding: 10rem;
     text-align: center;
     background-color: #f4f4f4;
+}
+
+.experience h2 {
+    color: #081b29;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .experience-gallery {
