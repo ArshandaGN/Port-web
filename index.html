@@ -39,7 +39,7 @@
 
         <section id="about" class="about">
             <h2>About Me</h2>
-            <p> I am a Computer Science student at Universitas Pertamina with a big interest in technology and web development. I am always learning and improving my web development and programming skills, and I have experience with HTML and CSS. I also take part in student committees, where I have learned to work well in teams and build leadership skills. I know programming languages like C++, CSS, Java, and Python. I enjoy trying new things and taking on challenges to learn more. This portfolio shows my journey in the digital world and my passion for innovation. my favorite songs is consume by chase atlantic</p>
+            <p> I am a Computer Science student at Universitas Pertamina with a big interest in technology and web development. I am always learning and improving my web development and programming skills, and I have experience with HTML and CSS. I also take part in student committees, where I have learned to work well in teams and build leadership skills. I know programming languages like C++, CSS, Java, and Python. I enjoy trying new things and taking on challenges to learn more. This portfolio shows my journey in the digital world and my passion for innovation.</p>
             
         </section>
     
@@ -67,40 +67,41 @@
                     <p>I edited this video for a class assignment using CapCut. You can watch the result in the video above.</p>
                 </div>
                 <div class="experience-item">
-                    <img src="machero.png" alt="Website Toko Roti" /> 
-                    <h3>Website Toko Roti</h3> 
-                    <p>Saya membuat website ini menggunakan HTML dan CSS.</p> 
+                    <a href="https://github.com/ArshandaGN/Praktikum-Pemweb.git"><img src="machero.png" alt="Website Toko Roti"/> </a>
+                    <h3>Bakery Website</h3> 
+                    <p>I made this website using HTML and CSS.</p>
                 </div>
             </div>
         </section>
     
-        <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p>You can reach out to me via email or social media below.</p>
-                <div class="contact-info">
-                    <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i> Email</a>
-                    <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i> Instagram</a>
-                    <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i> LinkedIn</a>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="description">Message</label>
-                            <textarea id="description" rows="6" name="description" required></textarea>
-                        </div>
-                        <button type="button" onclick="submitForm()">Submit</button>
-                        <p id="error-message"></p>
-                    </form>
+                <p>You can reach out to me via email or social media below:</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <a href="mailto:arshandagn06@gmail.com"><i class='bx bx-envelope'></i> Email</a>
+                        <a href="https://www.instagram.com/arshndasvnch"><i class='bx bxl-instagram'></i> Instagram</a>
+                        <a href="https://www.linkedin.com/in/arshandagn"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Message</label>
+                                <textarea id="description" rows="6" name="description" required placeholder="Write your message here"></textarea>
+                            </div>
+                            <button type="button" onclick="submitForm()">Submit</button>
+                            <p id="error-message"></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

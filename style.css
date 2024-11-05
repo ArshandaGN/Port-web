@@ -48,7 +48,6 @@ body {
 }
 
 .navbar {
-    display: flex;
     flex-direction: row;
     transition: max-height 0.3s ease-in-out;
 }
@@ -70,11 +69,6 @@ body {
 .navbar.active {
     display: block;
     max-height: 300px; /* Adjust based on the number of items */
-}
-
-.nav-toggle {
-    display: none;
-    cursor: pointer;
 }
 
 .home {
@@ -173,7 +167,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 200px;
     height: 100%;
     background: #00abf0;
     border: 2px solid #00abf0;
@@ -417,7 +411,7 @@ body {
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.0rem;
+    padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     max-width: 300px;
@@ -452,13 +446,6 @@ body {
     aspect-ratio: 16/9;
     border-radius: 8px;
     margin-bottom: 1rem;
-}
-
-/* Responsiveness */
-@media (max-width: 760px) {
-    .experience-item {
-        width: 100%;
-    } 
 }
 
 /* Contact Section */
@@ -563,4 +550,18 @@ button:hover {
 
 .footer p {
     font-size: 16px;
+}
+
+/* Responsiveness */
+@media (max-width: 760px) {
+    .experience {
+        padding: 2rem;
+    }
+    .experience-item {
+        max-width: 100%; 
+        padding: 1.5rem; 
+    }
+    .experience h2, .experience h3 {
+        font-size: 28px; 
+    }
 }
